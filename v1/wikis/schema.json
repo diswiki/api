@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": [
+    "version",
+    "name",
+    "description",
+    "server",
+    "invite",
+    "creation",
+    "auth"
+  ],
+  "properties": {
+    "version": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "server": {
+      "type": "integer"
+    },
+    "invite": {
+      "type": "string"
+    },
+    "creation": {
+      "type": "integer"
+    },
+    "auth": {
+      "type": "object",
+      "required": [
+        "server_owner",
+        "wiki_owner"
+      ],
+      "properties": {
+        "server_owner": {
+          "type": "integer"
+        },
+        "wiki_owner": {
+          "type": "integer"
+        },
+        "wiki_admins": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        }
+      }
+    }
+  }
+}
