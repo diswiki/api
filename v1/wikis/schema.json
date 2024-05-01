@@ -27,7 +27,19 @@
       "type": "string"
     },
     "creation": {
-      "type": "integer"
+      "type": "object",
+      "required": [
+        "wiki",
+        "server"
+      ],
+      "properties": {
+        "wiki": {
+          "type": "integer"
+        },
+        "server": {
+          "type": "integer"
+        }
+      }
     },
     "auth": {
       "type": "object",
@@ -43,7 +55,7 @@
           "type": "integer"
         },
         "wiki_admins": {
-          "type": "array",
+          "type": ["array", "null"],
           "items": {
             "type": "integer"
           }
