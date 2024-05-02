@@ -1,2 +1,2 @@
-# api
-The API 🤯
+# resources
+🤯
