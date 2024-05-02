@@ -4,7 +4,6 @@
   "required": [
     "version",
     "name",
-    "description",
     "server",
     "invite",
     "creation",
