@@ -1,0 +1,4 @@
+# Exists just to have the tailwind css plugin activate
+*/template/node_modules
+*/template/package*.json
+*/template/tailwind.config.js
