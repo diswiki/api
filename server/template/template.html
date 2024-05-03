@@ -2,38 +2,47 @@
     #wiki-header {
         font-size: 3em;
     }
+
     #wiki-styling-rules h1 {
         font-size: 2em;
         width: 100%;
         padding-bottom: 2.5px;
         border-bottom: 1px solid gray;
     }
+
     #wiki-styling-rules h2 {
         font-size: 1.5em;
         width: 100%;
         padding-bottom: 2.5px;
         border-bottom: 1px solid gray;
     }
+
     #wiki-styling-rules h3 {
         font-size: 1.17em;
         width: 100%;
     }
+
     #wiki-styling-rules h4 {
         font-size: 1em;
         width: 100%;
     }
+
     #wiki-styling-rules h5 {
         font: .83em;
         width: 100%;
     }
+
     #wiki-styling-rules h6 {
         font-size: .67em;
         width: 100%;
     }
+
     #wiki-styling-rules pre {
         border: 1px solid grey;
         border-radius: 5px;
         background-color: #101010;
+        width: min-content;
+        padding: 2.5px 5px;
     }
 </style>
 
@@ -43,7 +52,8 @@
         <h3>Table of Contents</h3>
     </div>
     <div id="wiki-content" class="flex-grow"></div>
-    <div id="wiki-sidebar" class="flex flex-col gap-y-2 items-center w-[45em] flex-shrink bg-slate-700 border-2 border-gray-300">
+    <div id="wiki-sidebar"
+        class="flex flex-col gap-y-2 items-center w-[45em] flex-shrink bg-slate-700 border-2 border-gray-300">
         <h3 id="wiki-sidebar-title" class="text-center font-bold"></h3>
         <img id="wiki-sidebar-server-icon" class="w-[80%] h-min object-contain rounded-lg bg-[#1e2124]">
     </div>
