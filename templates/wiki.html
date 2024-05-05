@@ -82,31 +82,13 @@
     }
 
     details>summary {
-        list-style: none;
         cursor: pointer;
     }
-
-    summary::-webkit-details-marker {
-        display: none;
+    summary::marker {
+        color: var(--c-lighter);
+        font-size:
+        .9rem;
     }
-
-    summary::before {
-        content: " ˃ ";
-        margin-left: 1px;
-    }
-
-    details[open] summary:before {
-        content: " ˅ ";
-    }
-
-    /* Use JavaScript when making the element to set indent. */
-    /* #wiki-toc-container > ol details li {
-    margin-left: 2rem;
-  }
-  #wiki-toc-container > ol details > ol ol {
-    margin-left: 1.5rem;
-  } */
-    /* ===================================================== */
 
     #wiki-wrapper {
         -webkit-box-flex: 1;
