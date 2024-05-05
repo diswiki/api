@@ -300,6 +300,7 @@
             width: 100%;
         }
     }
+    .tippy-box[data-animation=scale][data-placement^=top]{transform-origin:bottom}.tippy-box[data-animation=scale][data-placement^=bottom]{transform-origin:top}.tippy-box[data-animation=scale][data-placement^=left]{transform-origin:right}.tippy-box[data-animation=scale][data-placement^=right]{transform-origin:left}.tippy-box[data-animation=scale][data-state=hidden]{transform:scale(.5);opacity:0}
 </style>
 <div id="wiki-container">
     <div id="wiki-toc-container">
@@ -409,3 +410,36 @@
         <!-- <p>hi mom</p> -->
     </div>
 </div>
+
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
+<script>
+    var tooltipMapping = [
+        {
+            "id": "#wiki-action-like",
+            "content": "Like Page"
+        },
+        {
+            "id": "#wiki-action-share",
+            "content": "Share Page"
+        },
+        {
+            "id": "#wiki-action-report",
+            "content": "Report Page"
+        }
+
+    ];
+
+    document.addEventListener('DOMContentLoaded', () => {
+        console.log(`Setting up ${tooltipMapping.length} tooltip(s).`);
+
+        for (var i = 0; i < tooltipMapping.length; i++) {
+            currentToolip = tooltipMapping[i];
+            tippy(currentToolip.id, {
+                content: currentToolip.content
+            });
+        }
+
+        console.log(`Finished setting up ${tooltipMapping.length} tooltip(s).`);
+    });
+</script>
