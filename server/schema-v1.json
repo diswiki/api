@@ -3,6 +3,7 @@
   "type": "object",
   "required": [
     "version",
+    "last_updated",
     "name",
     "server",
     "invite",
@@ -13,6 +14,9 @@
     "version": {
       "type": "integer"
     },
+    "last_updated": {
+      "type": "integer"
+    },
     "name": {
       "type": "string"
     },
@@ -20,6 +24,15 @@
       "type": "string"
     },
     "server": {
+      "type": "integer"
+    },
+    "likes": {
+      "type": "integer"
+    },
+    "shares": {
+      "type": "integer"
+    },
+    "reports": {
       "type": "integer"
     },
     "invite": {
