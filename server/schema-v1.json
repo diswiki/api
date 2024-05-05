@@ -24,7 +24,7 @@
       "type": "string"
     },
     "server": {
-      "type": "integer"
+      "type": "string"
     },
     "likes": {
       "type": "integer"
@@ -61,15 +61,15 @@
       ],
       "properties": {
         "server_owner": {
-          "type": "integer"
+          "type": "string"
         },
         "wiki_owner": {
-          "type": "integer"
+          "type": "string"
         },
         "wiki_admins": {
           "type": ["array", "null"],
           "items": {
-            "type": "integer"
+            "type": "string"
           }
         }
       }

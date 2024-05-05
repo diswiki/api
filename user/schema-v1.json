@@ -36,10 +36,7 @@
       "type": "integer"
     },
     "uid": {
-      "type": "integer"
-    },
-    "server": {
-      "type": "integer"
+      "type": "string"
     },
     "creation": {
       "type": "object",
